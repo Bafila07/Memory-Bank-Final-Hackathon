@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Applications/Sudh%20/Hackathons/MemoryBank/Memory-Bank-Final-Hackathon/styles/globals.css"],"sourcesContent":["body {\n  font-family: sans-serif;\n  margin: 0;\n  background: #fafafa;\n}\n\nnav {\n  padding: 10px;\n  background: #fff;\n  display: flex;\n  gap: 10px;\n}\n\n.container {\n  padding: 20px;\n}\n\n.center {\n  height: 100vh;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n.card {\n  background: white;\n  padding: 12px;\n  margin: 10px 0;\n  border-radius: 6px;\n}\n"],"names":[],"mappings":"AAAA;;;;;;AAMA;;;;;;;AAOA;;;;AAIA;;;;;;;;AAQA"}}]
+}

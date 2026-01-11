@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":["file:///Applications/Sudh%20/Hackathons/MemoryBank/Memory-Bank-Final-Hackathon/pages/login.js"],"sourcesContent":["import { useState } from \"react\";\nimport { useRouter } from \"next/router\";\nimport { useAuth } from \"../context/AuthContext\";\n\nexport default function Login() {\n  const [email, setEmail] = useState(\"\");\n  const { login } = useAuth();\n  const router = useRouter();\n\n  const handleLogin = () => {\n    login(email);\n    router.push(\"/dashboard\");\n  };\n\n  return (\n    <div className=\"center\">\n      <h1>Memory Bank</h1>\n      <input\n        placeholder=\"Enter email\"\n        value={email}\n        onChange={(e) => setEmail(e.target.value)}\n      />\n      <button onClick={handleLogin}>Login</button>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AAAA;AACA;AACA;;;;;AAEe,SAAS;IACtB,MAAM,CAAC,OAAO,SAAS,GAAG,IAAA,+GAAQ,EAAC;IACnC,MAAM,EAAE,KAAK,EAAE,GAAG,IAAA,0HAAO;IACzB,MAAM,SAAS,IAAA,oIAAS;IAExB,MAAM,cAAc;QAClB,MAAM;QACN,OAAO,IAAI,CAAC;IACd;IAEA,qBACE,qKAAC;QAAI,WAAU;;0BACb,qKAAC;0BAAG;;;;;;0BACJ,qKAAC;gBACC,aAAY;gBACZ,OAAO;gBACP,UAAU,CAAC,IAAM,SAAS,EAAE,MAAM,CAAC,KAAK;;;;;;0BAE1C,qKAAC;gBAAO,SAAS;0BAAa;;;;;;;;;;;;AAGpC"}}]
+}

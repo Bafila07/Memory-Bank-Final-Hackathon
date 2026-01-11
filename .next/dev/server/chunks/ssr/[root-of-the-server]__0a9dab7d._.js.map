@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":["file:///Applications/Sudh%20/Hackathons/MemoryBank/Memory-Bank-Final-Hackathon/pages/index.js"],"sourcesContent":["import { useEffect } from \"react\";\nimport { useRouter } from \"next/router\";\n\nexport default function Home() {\n  const router = useRouter();\n\n  useEffect(() => {\n    router.push(\"/login\");\n  }, []);\n\n  return null;\n}\n"],"names":[],"mappings":";;;;AAAA;AACA;;;AAEe,SAAS;IACtB,MAAM,SAAS,IAAA,oIAAS;IAExB,IAAA,gHAAS,EAAC;QACR,OAAO,IAAI,CAAC;IACd,GAAG,EAAE;IAEL,OAAO;AACT"}}]
+}

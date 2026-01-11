@@ -1,0 +1,9 @@
+{
+  "/": "pages/index.js",
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/add-memory": "pages/add-memory.js",
+  "/dashboard": "pages/dashboard.js",
+  "/login": "pages/login.js",
+  "/memories": "pages/memories.js"
+}
