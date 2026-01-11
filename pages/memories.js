@@ -11,11 +11,20 @@ export default function Memories() {
   return (
     <ProtectedRoute>
       <Navbar />
-      <div className="container">
-        <h2>Memories</h2>
-        {memories.map((m, i) => (
-          <MemoryCard key={i} memory={m} />
-        ))}
+      <div className="page">
+        <h2>Things you should remember</h2>
+
+        {memories.length === 0 && (
+          <p style={{ color: "#6e6e73" }}>
+            Nothing saved yet. That’s okay. We’ll start together.
+          </p>
+        )}
+
+        <div className="section">
+          {memories.map((m, i) => (
+            <MemoryCard key={i} memory={m} />
+          ))}
+        </div>
       </div>
     </ProtectedRoute>
   );

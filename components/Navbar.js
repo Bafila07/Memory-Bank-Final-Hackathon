@@ -6,9 +6,10 @@ export default function Navbar() {
 
   return (
     <nav>
-      <Link href="/dashboard">Dashboard</Link>
-      <Link href="/add-memory">Add Memory</Link>
-      <Link href="/memories">Memories</Link>
+      <strong>Memory Bank</strong>
+      <Link href="/dashboard">Home</Link>
+      <Link href="/add-memory">Save</Link>
+      <Link href="/memories">Recall</Link>
       <button onClick={logout}>Logout</button>
     </nav>
   );

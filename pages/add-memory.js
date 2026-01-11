@@ -6,23 +6,27 @@ export default function AddMemory() {
   const [text, setText] = useState("");
 
   const saveMemory = () => {
+    if (!text) return;
     const memories = JSON.parse(localStorage.getItem("memories") || "[]");
     memories.push({ text, date: new Date().toISOString() });
     localStorage.setItem("memories", JSON.stringify(memories));
     setText("");
-    alert("Memory saved");
+    alert("Saved safely.");
   };
 
   return (
     <ProtectedRoute>
       <Navbar />
-      <div className="container">
-        <h2>Add Memory</h2>
+      <div className="page">
+        <h2>Save something important</h2>
+
         <textarea
           value={text}
           onChange={(e) => setText(e.target.value)}
+          placeholder="Write something you don’t want to forget…"
         />
-        <button onClick={saveMemory}>Save</button>
+
+        <button onClick={saveMemory}>Save memory</button>
       </div>
     </ProtectedRoute>
   );

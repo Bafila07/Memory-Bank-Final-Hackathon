@@ -102,3 +102,12 @@ button:hover {
   align-items: center;
   gap: 14px;
 }
+h1, h2 {
+  font-weight: 600;
+  letter-spacing: -0.3px;
+}
+
+p {
+  line-height: 1.6;
+}
+
