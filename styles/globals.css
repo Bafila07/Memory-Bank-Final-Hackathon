@@ -1,31 +1,104 @@
-body {
-  font-family: sans-serif;
+/* ===== Global Reset ===== */
+* {
+  box-sizing: border-box;
   margin: 0;
-  background: #fafafa;
+  padding: 0;
 }
 
-nav {
-  padding: 10px;
-  background: #fff;
-  display: flex;
-  gap: 10px;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif;
+  background: #f5f5f7;
+  color: #1d1d1f;
 }
 
+/* ===== Layout ===== */
 .container {
-  padding: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
+/* ===== Navbar ===== */
+nav {
+  background: white;
+  padding: 14px 28px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+nav a {
+  text-decoration: none;
+  color: #1d1d1f;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #0071e3;
+}
+
+/* ===== Headings ===== */
+h1,
+h2 {
+  margin-bottom: 16px;
+}
+
+/* ===== Inputs ===== */
+input,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #d2d2d7;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* ===== Buttons ===== */
+button {
+  background: #0071e3;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #005bb5;
+}
+
+/* ===== Cards ===== */
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+  margin: 14px 0;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card p {
+  margin-bottom: 6px;
+}
+
+.card small {
+  color: #6e6e73;
+}
+
+/* ===== Center Screen (Login) ===== */
 .center {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.card {
-  background: white;
-  padding: 12px;
-  margin: 10px 0;
-  border-radius: 6px;
+  gap: 14px;
 }
